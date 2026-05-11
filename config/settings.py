@@ -92,7 +92,7 @@ USE_TZ = True
 
 # CORS – для локальной разработки и будущего фронтенда
 CORS_ALLOW_ALL_ORIGINS = False  
- CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://offcon.vercel.app",  # добавите после деплоя фронта
 ]

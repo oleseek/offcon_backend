@@ -91,11 +91,11 @@ USE_I18N = True
 USE_TZ = True
 
 # CORS – для локальной разработки и будущего фронтенда
-CORS_ALLOW_ALL_ORIGINS = True  # временно, потом ограничить
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-#     "https://offcon-frontend.vercel.app",  # добавите после деплоя фронта
-# ]
+CORS_ALLOW_ALL_ORIGINS = False  
+ CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://offcon.vercel.app",  # добавите после деплоя фронта
+]
 CORS_ALLOW_CREDENTIALS = True
 
 # Media files
@@ -123,4 +123,5 @@ SIMPLE_JWT = {
 CSRF_TRUSTED_ORIGINS = [
     'https://*.onrender.com',
     'https://offcon-backend.onrender.com',
+    'https://offcon.vercel.app', 
 ]
